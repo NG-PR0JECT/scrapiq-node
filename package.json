@@ -1,0 +1,28 @@
+{
+  "name": "scrapiq-node",
+  "version": "0.1.0",
+  "description": "Dependency-free TypeScript client for Scrapiq — turn any URL into clean markdown or structured JSON for LLM/RAG pipelines.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["scrapiq", "scraping", "extraction", "llm", "rag", "url-to-json", "markdown"],
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
