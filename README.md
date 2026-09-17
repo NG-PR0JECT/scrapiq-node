@@ -6,9 +6,13 @@ Zero runtime dependencies (uses the global `fetch`, Node 18+). Ships ESM + TypeS
 
 ## Install
 
+Not on npm yet, so install from this repo:
+
 ```bash
-npm install scrapiq-node
+npm install github:NG-PR0JECT/scrapiq-node
 ```
+
+The build runs on install (`prepare` -> `tsc`), so `dist/` exists by the time your import resolves.
 
 ## Quick start
 
